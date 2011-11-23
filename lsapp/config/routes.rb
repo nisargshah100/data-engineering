@@ -1,4 +1,9 @@
 Lsapp::Application.routes.draw do
+  resource :uploads
+  
+  devise_for :users
+  root :to => 'home#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

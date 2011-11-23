@@ -7,8 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  
+  <h1>LSApp</h1>
+  <%= render 'home/menu' %>
+  <hr />
+  
+  <div id='flash_notice'><%= flash[:notice] %></div>
+  <div id='flash_alert'><%= flash[:alert] %></div>
+  
+  <p>
+    <%= yield %>
+  </p>
+  
 </body>
 </html>

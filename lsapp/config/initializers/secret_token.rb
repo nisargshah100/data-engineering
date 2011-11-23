@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Lsapp::Application.config.secret_token = 'a5796ca3e4c3f574261148ff88ca1c2d91290a8caa7ba90406c23cdccb63e4b236bad2956faa99700efe6190385719bd76c65cdf22eb4d3225a0b3fb4663e1eb'
+Lsapp::Application.config.secret_token = 'f0ead4c2bac8bc595ce09f7d2f07c1ebe035b1a9b200a8b87a2fd449df58aacbefb627323960926ea2a61e334e7f2ee11ca62aafe5af4ea8497d3e57237e2357'

@@ -5,3 +5,29 @@
  *= require_self
  *= require_tree . 
 */
+
+body {
+  font-family: verdana;
+  font-size: 12px;
+}
+
+input {
+  padding: 3px;
+}
+
+form > div {
+  margin-bottom: 10px;
+}
+
+#flash_alert {
+  color: red;
+}
+
+#flash_notice {
+  color: green;
+}
+
+#menu > a {
+  margin-left: 10px;
+  margin-right: 10px;
+}

@@ -1,0 +1,37 @@
+<% if current_user %>
+  
+  <h3>Quick summary of all the data</h3>
+
+  <h4>Merchants</h4>
+  <ul>
+    <% @merchants.each do |m| %>
+      <li><%= "#{m} (#{m.address})" %>
+    <% end %>
+  </ul>
+  
+  <h4>Purchasers</h4>
+  <ul>
+    <% @purchasers.each do |p| %>
+      <li><%= p %>
+    <% end %>
+  </ul>
+  
+  <h4>Deals</h4>
+  <ul>
+    <% @deals.each do |d| %>
+      <li><%= d %>
+    <% end %>
+  </ul>
+  
+  <h4>Sales</h4>
+  <ul>
+    <% @sales.each do |s| %>
+      <li>
+        <%= s %>
+      </li>
+    <% end %>
+  </ul>
+  
+<% else %>
+  You must be logged in to upload files!
+<% end %>
