@@ -29,7 +29,9 @@ class UploadsController < ApplicationController
         deal = Deal.find_or_create_by_description row[1], :price => row[2]
         sale = Sale.create :purchaser => purchaser, :merchant => merchant, :deal => deal, :purchase_count => row[3]
         
-        revenue += deal.price * sale.purchase_count 
+        if deal and sale
+          revenue += deal.price * sale.purchase_count
+        end
       end
     rescue FasterCSV::MalformedCSVError 
       # log it 
